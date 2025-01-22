@@ -9,12 +9,14 @@ import LandingPage from './pages/LandingPage/LandingPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import PortfolioRoutes from './pages/PortfolioPage/PortfolioRoutes';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
+import MapPage from './pages/MapPage/MapPage';
 
 function App() {
   return (
     <Suspense fallback={<CCircularProgress />}>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/map" element={<MapPage />} />
         <Route
           path="/portfolio/*"
           element={
